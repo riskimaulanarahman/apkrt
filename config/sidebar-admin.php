@@ -15,7 +15,7 @@ return [
   'menu' => [
         [
             'icon' => 'fa fa-home',
-            'title' => 'Dashboard',
+            'title' => 'Home',
             'url' => '/',
             'route-name' => 'admin.index'
         ],[
@@ -29,14 +29,14 @@ return [
                         'title' => 'Kinerja Ketua RT',
                         'route-name' => 'admin.kegiatan-laporanrt'
                     ],
-                    [
-                        'url' => 'javascript:;',
-                        'title' => 'Kematian Warga'
-                    ],
-                    [
-                        'url' => 'javascript:;',
-                        'title' => 'Demografi RT'
-                    ],
+//                     [
+//                         'url' => 'javascript:;',
+//                         'title' => 'Kematian Warga'
+//                     ],
+//                     [
+//                         'url' => 'javascript:;',
+//                         'title' => 'Demografi RT'
+//                     ],
                 ]
         ],[
             'icon' => 'fa fa-folder',
@@ -55,23 +55,25 @@ return [
             'title' => 'Kelola User',
             'url' => '/master-user',
             'route-name' => 'admin.masteruser'
-        ],[
-            'icon' => 'fa fa-hdd',
-            'title' => 'Kelola Sistem',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [
-                [
-                    'url' => 'javascript:;',
-                    'title' => 'Inisialisasi Kelurahan'
-                ],[
-                    'url' => 'javascript:;',
-                    'title' => 'Pemeliharaan Data'
-                ]]
-        ],[
-            'icon' => 'fa fa-question-circle',
-            'title' => 'Bantuan',
-            'url' => '/bantuan',
-        ]
+        ],
+//         [
+//             'icon' => 'fa fa-hdd',
+//             'title' => 'Kelola Sistem',
+//             'url' => 'javascript:;',
+//             'caret' => true,
+//             'sub_menu' => [
+//                 [
+//                     'url' => 'javascript:;',
+//                     'title' => 'Inisialisasi Kelurahan'
+//                 ],[
+//                     'url' => 'javascript:;',
+//                     'title' => 'Pemeliharaan Data'
+//                 ]]
+//         ],
+//         [
+//             'icon' => 'fa fa-question-circle',
+//             'title' => 'Bantuan',
+//             'url' => '/bantuan',
+//         ]
     ]
 ];
