@@ -4,7 +4,7 @@
 
 @section('content')
 	<!-- begin panel -->
-	<div class="panel panel-info">
+	<!-- <div class="panel panel-info">
 		<div class="panel-heading">
 			<h4 class="panel-title">Panel Title here</h4>
 			<div class="panel-heading-btn">
@@ -17,6 +17,8 @@
 		<div class="panel-body">
 			Panel Content Here
 		</div>
-	</div>
+	</div> -->
+	<h2>Welcome {{ Auth::user()->nama_lengkap }} </h2>
+	
 	<!-- end panel -->
 @endsection
