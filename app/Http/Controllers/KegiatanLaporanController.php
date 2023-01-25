@@ -136,7 +136,7 @@ class KegiatanLaporanController extends Controller
             $data = KegiatanLaporan::findOrFail($id);
             if($user->role == 'admin') {
                 $data->update($requestData);
-                return response()->json(["status" => "success", "message" => "Berhasil Ubah Data"])
+                return response()->json(["status" => "success", "message" => "Berhasil Ubah Data"]);
             } else {
                 if($now->format('m') !== $data->bulan) {
                     return response()->json(["status" => "error", "message" => "Gagal Ubah Data, Tanggal Kadaluarsa"]);
