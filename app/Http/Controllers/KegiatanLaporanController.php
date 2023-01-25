@@ -48,7 +48,7 @@ class KegiatanLaporanController extends Controller
         $user = Auth::user();
 
         $date = $request->tanggal;
-        $nort = $request->id_rt;
+        $nort = $request['users']['id_rt'];
         $fixed = date('Y-m-d', strtotime(substr($date,0,10)));
 
         $requestData = $request->all();
@@ -111,7 +111,7 @@ class KegiatanLaporanController extends Controller
         $user = Auth::user();
         
         $date = $request->tanggal;
-        $nort = $request->id_rt;
+        $nort = $request['users']['id_rt'];
         $fixed = date('Y-m-d', strtotime(substr($date,0,10)));
         
         $requestData = $request->all();
