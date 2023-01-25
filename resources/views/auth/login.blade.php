@@ -15,8 +15,8 @@
 		<!-- begin brand -->
 		<div class="login-header">
 			<div class="brand">
-				<span class="fa fa-lock"></span> <b>SIMPEK</b> RT
-				<small>Sistem Informasi Manajemen Pelaporan Kinerja Ketua RT</small>
+				<span class="fa fa-lock"></span> <b>APK</b> RT
+				<small>Aplikasi Pelaporan Kinerja RT</small>
 			</div>
 			{{-- <div class="icon">
 				<i class="fa fa-lock"></i>
