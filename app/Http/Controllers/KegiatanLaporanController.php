@@ -24,9 +24,9 @@ class KegiatanLaporanController extends Controller
 
         try {
             if($user->role == 'operator') {
-                $data = KegiatanLaporan::where('id_users',$user->id)->orderBy('id','desc')->get();
+                $data = KegiatanLaporan::where('id_users',$user->id)->orderBy('kegiatan_laporans.id','desc')->get();
             } else {
-                $data = KegiatanLaporan::with('users')->orderBy('id','desc')->get();
+                $data = KegiatanLaporan::with('users')->orderBy('kegiatan_laporans.id','desc')->get();
             }
 
             return response()->json(['status' => "show", "message" => "Menampilkan Data" , 'data' => $data]);
