@@ -226,6 +226,7 @@ var dataGrid = $("#kegiatan-laporanrt").dxDataGrid({
             }
         },
         { 
+            caption: "RT",
             dataField: "users.id_rt",
             editorType: "dxSelectBox",
             width: 40,
