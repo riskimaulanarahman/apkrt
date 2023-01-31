@@ -29,19 +29,20 @@ return [
                     'title' => 'Kinerja Ketua RT',
                     'route-name' => 'admin.kegiatan-laporanrt'
                 ],
-                [
-                    'url' => 'javascript:;',
-                    'title' => 'Kematian Warga'
-                ],
-                [
-                    'url' => 'javascript:;',
-                    'title' => 'Demografi RT'
-                ],
+                // [
+                //     'url' => 'javascript:;',
+                //     'title' => 'Kematian Warga'
+                // ],
+                // [
+                //     'url' => 'javascript:;',
+                //     'title' => 'Demografi RT'
+                // ],
             ]
-        ],[
-            'icon' => 'fa fa-question-circle',
-            'title' => 'Bantuan',
-            'url' => '/bantuan',
-        ]
+        ],
+        // [
+        //     'icon' => 'fa fa-question-circle',
+        //     'title' => 'Bantuan',
+        //     'url' => '/bantuan',
+        // ]
     ]
 ];

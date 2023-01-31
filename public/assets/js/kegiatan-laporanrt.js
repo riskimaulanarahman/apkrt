@@ -187,6 +187,7 @@ var dataGrid = $("#kegiatan-laporanrt").dxDataGrid({
                 items: [
                     {
                         dataField: "users.id_rt",
+                        visible: (role=="admin")?true:false,
                     },
                     {
                         dataField: "id_kegiatan",

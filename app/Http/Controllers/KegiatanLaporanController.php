@@ -48,7 +48,11 @@ class KegiatanLaporanController extends Controller
         $user = Auth::user();
 
         $date = $request->tanggal;
-        $nort = $request['users']['id_rt'];
+        if($user->role == 'admin') {
+            $nort = $request['users']['id_rt'];
+        } else {
+            $nort = $user->id_rt;
+        }
         $fixed = date('Y-m-d', strtotime(substr($date,0,10)));
 
         $requestData = $request->all();
@@ -111,7 +115,17 @@ class KegiatanLaporanController extends Controller
         $user = Auth::user();
         
         $date = $request->tanggal;
-        $nort = $request['users']['id_rt'];
+        if(isset($request['users']['id_rt'])) {
+            if($user->role == 'admin') {
+                $nort = $request['users']['id_rt'];
+            } else {
+                $nort = $user->id_rt;
+            }
+        } else {
+            $datani = KegiatanLaporan::findOrFail($id);
+            $getuserni = User::where('id',$datani->id_users)->first();
+            $nort = $getuserni->id_rt;
+        }
         $fixed = date('Y-m-d', strtotime(substr($date,0,10)));
         
         $requestData = $request->all();
